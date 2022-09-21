@@ -1,4 +1,6 @@
 import React from 'react';
+import Synonyms from "./../Synonyms/Synonyms";
+
  const MeaningItem = ({item}) => {
    return (
      <li>
@@ -6,9 +8,15 @@ import React from 'react';
        {item.definitions.map((element, index)=>{
          return(
            <div key={index}>
-             <p>{element.definition}</p>
+             <p>
+               <strong>Definition: </strong>
+               {element.definition}</p>
              <br />
-             <p>{element.example}</p>
+             <p>
+               <strong>Example: </strong>
+               {element.example}
+             </p>
+             <Synonyms synonyms={element.synonyms} />
            </div>
          )
        })}
