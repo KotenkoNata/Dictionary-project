@@ -1,0 +1,14 @@
+.synonyms-title{
+  text-align: left;
+}
+
+.synonyms-list{
+  text-align: left;
+  font-style: italic;
+  padding-left: 50px;
+  color: var(--pink);
+}
+
+.synonyms-list li{
+  margin-right: 20px;
+}

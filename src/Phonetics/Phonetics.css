@@ -1,0 +1,20 @@
+
+.audio-button{
+  background: transparent;
+  border: 1px solid var(--white);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.audio-button:hover{
+  cursor: pointer;
+  border: 1px solid var(--gray);
+}
+
+.audio-button:hover .icon-listen{
+  fill: var(--gray);
+}
+
+.icon-listen{
+  fill: var(--white);
+}

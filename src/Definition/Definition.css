@@ -1,0 +1,51 @@
+.searching-word{
+  text-align: left;
+  padding: 0px 30px;
+  color: var(--white);
+}
+
+.searching-word-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--pink);
+  padding: 0 30px;
+  margin: 20px 0;
+}
+
+.definition-list li{
+  margin-bottom: 20px;
+}
+
+.definition-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  /*border-bottom: 1px solid var(--gray);*/
+}
+
+.definition-world{
+  font-size: 26px;
+  text-align: left;
+  margin: 10px 0;
+  font-style: italic;
+  color: var(--pink)
+}
+
+.definition-item{
+  text-align: left;
+}
+
+.definition-item-container{
+  padding: 50px 50px 10px 50px;
+  margin: 0;
+}
+
+.example{
+  font-style: italic;
+}
+
+.definition-item{
+  margin-bottom: 50px;
+}

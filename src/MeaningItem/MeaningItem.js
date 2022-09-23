@@ -1,25 +1,28 @@
 import React from 'react';
-import Synonyms from "./../Synonyms/Synonyms";
+import DefinitionExample from './../DefinitionExample/DefinitionExample';
 
- const MeaningItem = ({item}) => {
+ const MeaningItem = ({item, word}) => {
+
+   function capitalizeFirstLetter(str) {
+     return str.charAt(0).toUpperCase() + str.slice(1);
+   }
+
    return (
-     <li>
-        <h3>{item.partOfSpeech}</h3>
+     <li className="definition-item">
+        <h3 className="definition-title">{capitalizeFirstLetter(item.partOfSpeech)}</h3>
+        <h4 className="definition-world">{word}</h4>
+       <div className="definition-item-container">
        {item.definitions.map((element, index)=>{
          return(
-           <div key={index}>
+           <div key={index} className="definition-item">
              <p>
-               <strong>Definition: </strong>
+               <strong>{`${index+1}. `}</strong>
                {element.definition}</p>
-             <br />
-             <p>
-               <strong>Example: </strong>
-               {element.example}
-             </p>
-             <Synonyms synonyms={element.synonyms} />
+             <DefinitionExample example={element.example}/>
            </div>
          )
        })}
+       </div>
      </li>
    )
  }

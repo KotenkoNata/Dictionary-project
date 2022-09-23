@@ -1,19 +1,13 @@
 import React from 'react';
+import './Synonyms.css';
 
-const Synonyms = (props) => {
-  console.log(`props.synonyms`,props.synonyms)
-  if(props.synonyms){
+const Synonyms = ({synonyms}) => {
+  if(synonyms.length){
     return (
-      <ul>
-        {props.synonyms.map((item, index)=>{
-          return (
-            <li key={index}>
-              <strong>Synonyms: </strong>
-              {item}</li>
-          )
-        })}
-      </ul>
-
+      <>
+        <h4 className="synonyms-title">Synonyms: </h4>
+        <p className="synonyms-list">{synonyms.join(', ')}</p>
+      </>
     )
   }else{
     return null

@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className={"container"}>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyworld={"sunset"}/>
         </main>
       </div>
     </div>

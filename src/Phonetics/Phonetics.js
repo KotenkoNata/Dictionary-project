@@ -1,9 +1,10 @@
 import React from 'react';
 import AudioPlay from './AudioPlay';
+import "./Phonetics.css";
 
 const Phonetics = ({phonetics}) => {
   return (
-    <ul>
+    <ul className="phonetics-list">
       {phonetics.map((element, index) => {
         return(
           <li key={index}>
