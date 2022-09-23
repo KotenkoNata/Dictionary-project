@@ -20,8 +20,8 @@ const Definition = ({definition}) => {
         <ul className="definition-list">
         {definition.meanings.map((item, index)=>{
           return (
-            <section className="section">
-            <MeaningItem item={item} key={index} word={definition.word}/>
+            <section className="section" key={index}>
+            <MeaningItem item={item} word={definition.word}/>
             <Synonyms synonyms={item.synonyms}/>
             </section>
           )
