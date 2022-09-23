@@ -1,6 +1,5 @@
 import React from 'react';
 import MeaningItem from './../MeaningItem/MeaningItem';
-import Phonetics from './../Phonetics/Phonetics';
 import AudioPlay from './../Phonetics/AudioPlay';
 import Synonyms from "./../Synonyms/Synonyms";
 import "./Definition.css";
