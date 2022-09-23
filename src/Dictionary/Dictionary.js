@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import axious from 'axios';
 import Definition from './../Definition/Definition';
 import Photos from './../Photos/Photos';
+import Footer from "./../Footer/Footer";
 import './Dictionary.css';
 
 
@@ -60,6 +61,7 @@ const Dictionary = ({defaultKeyworld}) => {
         </section>
         <Definition definition={definition}/>
         <Photos photos={photos}/>
+        <Footer />
       </>
     )
   }else{
