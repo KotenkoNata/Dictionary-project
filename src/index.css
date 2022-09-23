@@ -12,7 +12,7 @@ body {
   color: var(--gray);
 }
 .container{
-  padding: 0 calc(50% - 590px);
+  padding: 0 calc(50% - 450px);
 }
 
 .icon-play{
